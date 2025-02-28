@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свадьба Владислава и Марии 11 июня 2024">
+    <title>Владислав & Мария | Свадьба 11.06.2024</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero parallax" data-aos="fade-up">
+        <div class="overlay"></div>
+        <h1 class="title">Владислав ❤️ Мария</h1>
+        <p class="date">11.06.2024</p>
+    </section>
+
+    <!-- Детские фото -->
+    <section class="childhood section" data-aos="fade-right">
+        <h2>Наши истории</h2>
+        <div class="photos-grid">
+            <div class="photo-container" data-aos="zoom-in">
+                <img src="images/child-1.jpg" alt="Детство Владислава">
+                <p class="caption">Владислав, 5 лет</p>
+            </div>
+            <div class="photo-container" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/child-2.jpg" alt="Детство Марии">
+                <p class="caption">Мария, 6 лет</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Календарь -->
+    <section class="calendar section" data-aos="fade-up">
+        <h2>День нашей свадьбы</h2>
+        <div class="calendar-grid" id="calendar"></div>
+    </section>
+
+    <!-- Карта -->
+    <section class="map section" data-aos="zoom-in">
+        <h2>Место проведения</h2>
+        <div id="yandex-map" class="map-container"></div>
+    </section>
+
+    <!-- Дресс-код -->
+    <section class="dresscode section" data-aos="fade-left">
+        <h2>Дресс-код</h2>
+        <div class="colors-grid">
+            <div class="color-box brown" data-aos="flip-up">Коричневый</div>
+            <div class="color-box green" data-aos="flip-up" data-aos-delay="100">Зеленый</div>
+            <div class="color-box beige" data-aos="flip-up" data-aos-delay="200">Бежевый</div>
+            <div class="color-box pink" data-aos="flip-up" data-aos-delay="300">Светло-розовый</div>
+        </div>
+    </section>
+
+    <!-- Тайминг -->
+    <section class="timeline section" data-aos="fade-down">
+        <h2>Расписание дня</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-time">13:30</div>
+                <div class="timeline-content">Сбор гостей</div>
+            </div>
+            <!-- Добавьте остальные пункты -->
+        </div>
+    </section>
+
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_KEY&lang=ru_RU"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true
+        });
+    </script>
+</body>
+</html>
